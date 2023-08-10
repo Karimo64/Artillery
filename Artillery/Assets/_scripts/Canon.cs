@@ -7,7 +7,7 @@ public class Canon : MonoBehaviour
     [SerializeField] private GameObject BalaPrefab;
     private GameObject puntaCanon;
     private float rotacion;
-    int numDisparos = AdministradorJuego.DisparosPorJuego;
+    //int numDisparos = AdministradorJuego.DisparosPorJuego;
     private void Start() {
         puntaCanon = transform.Find("PuntaCanon").gameObject;
     }
@@ -22,15 +22,15 @@ public class Canon : MonoBehaviour
         if (rotacion > 90) rotacion = 90;
         if (rotacion < 0) rotacion = 0;
 
-            if (Input.GetKeyDown(KeyCode.Space) && numDisparos > 0)
+            if (Input.GetKeyDown(KeyCode.Space) && AdministradorJuego.DisparosPorJuego > 0)
             {
                 GameObject temp = Instantiate(BalaPrefab, puntaCanon.transform.position, transform.rotation);
                 Rigidbody tempRB = temp.GetComponent<Rigidbody>();
                 Vector3 direccionDisparo = transform.rotation.eulerAngles;
                 direccionDisparo.y = 90 - direccionDisparo.x;
                 tempRB.velocity = direccionDisparo.normalized * AdministradorJuego.VelocidadBala;
-                numDisparos--;
-                Debug.Log("El numero de disoparos es: " + numDisparos);
+                AdministradorJuego.DisparosPorJuego--;
+                Debug.Log("El numero de disoparos es: " + AdministradorJuego.DisparosPorJuego);
             }
             
         
