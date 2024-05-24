@@ -5,11 +5,17 @@ using UnityEngine;
 public class AdministradorJuego : MonoBehaviour
 {
     public static AdministradorJuego SingletonAdministradorJuego;
-    public static int VelocidadBala = 30;
-    public static int DisparosPorJuego = 10;
-    public static float VelocidadRotacion = 1;
+    [SerializeField] private int velocidadBala = 30;
+    public int DisparosPorJuego = 10;
+    public float VelocidadRotacion = 1;
 
-    private void Awake() {
+
+    public int VelocidadBala
+    {
+        get { return velocidadBala; }
+        set { velocidadBala = value; }
+    }
+    public void Awake() {
         if (SingletonAdministradorJuego == null)
         {
             SingletonAdministradorJuego = this;
