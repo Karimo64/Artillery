@@ -6,8 +6,8 @@ public class AdministradorJuego : MonoBehaviour
 {
     public static AdministradorJuego SingletonAdministradorJuego;
     [SerializeField] private int velocidadBala = 30;
-    public int DisparosPorJuego = 10;
-    public float VelocidadRotacion = 1;
+    [SerializeField] private int disparosPorJuego = 10;
+    [SerializeField] private float velocidadRotacion = 1;
 
 
     public int VelocidadBala
@@ -15,6 +15,19 @@ public class AdministradorJuego : MonoBehaviour
         get { return velocidadBala; }
         set { velocidadBala = value; }
     }
+
+    public int DisparosPorJuego
+    {
+        get { return disparosPorJuego; }
+        set { disparosPorJuego = value; }
+    }
+
+    public float VelocidadRotacion
+    {
+        get { return velocidadRotacion; }
+        set { velocidadRotacion = value; }
+    }
+
     public void Awake() {
         if (SingletonAdministradorJuego == null)
         {
