@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 13562968383683955}
   - component: {fileID: 4971791712121412813}
   m_Layer: 0
-  m_Name: Bala
+  m_Name: Bala_SG
   m_TagString: Bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d489753e700a64a49b674791ebcbc03c, type: 2}
+  - {fileID: 2100000, guid: 8af60677fe616dc42bab5dbdbfa094be, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
