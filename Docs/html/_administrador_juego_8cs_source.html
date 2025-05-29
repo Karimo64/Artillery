@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Artillery EBAC: Archivo de código fuente E:/Development/Unity/Artillery/Artillery/Assets/_scripts/AdministradorJuego.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">var page_layout=1;</script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="side-nav" class="ui-resizable side-nav-resizable"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Artillery EBAC<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Segundo protoipo para la clase de EBAC</div>
+  </td>
+ </tr>
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td></tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_administrador_juego_8cs_source.html','',''); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Buscar',true);
+});
+</script>
+<div id="main-nav"></div>
+<div id="container"><div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">AdministradorJuego.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>UnityEngine.SceneManagement;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_administrador_juego.html">   11</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_administrador_juego.html">AdministradorJuego</a> : MonoBehaviour</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#ab528e16377dec05fb6949246b54fc2a7">   16</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_administrador_juego.html">AdministradorJuego</a> <a class="code hl_variable" href="class_administrador_juego.html#ab528e16377dec05fb6949246b54fc2a7">SingletonAdministradorJuego</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    [SerializeField] <span class="keyword">private</span> <span class="keywordtype">int</span> velocidadBala = 30;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    [SerializeField] <span class="keyword">private</span> <span class="keywordtype">int</span> disparosPorJuego = 3;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    [SerializeField] <span class="keyword">private</span> <span class="keywordtype">float</span> velocidadRotacion = 1;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#a0cbec405b888c2ad03163ae8aaee1763">   25</a></span>    <span class="keyword">public</span> GameObject <a class="code hl_variable" href="class_administrador_juego.html#a0cbec405b888c2ad03163ae8aaee1763">PanelGanar</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#a4880fdf60678b41b0def7873ad595c1a">   30</a></span>    <span class="keyword">public</span> GameObject <a class="code hl_variable" href="class_administrador_juego.html#a4880fdf60678b41b0def7873ad595c1a">PanelPerder</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#a05269e5fc65322ffa6b2c906264c773f">   35</a></span>    <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_administrador_juego.html#a05269e5fc65322ffa6b2c906264c773f">esUltimoNivel</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#ad41548da404a0083923fb503288ccddc">   40</a></span>    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_administrador_juego.html#ad41548da404a0083923fb503288ccddc">VelocidadBala</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">get</span> { <span class="keywordflow">return</span> velocidadBala; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">set</span> { velocidadBala = value; }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#abad493ed527f41062fa3adaf210d6f8a">   49</a></span>    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_administrador_juego.html#abad493ed527f41062fa3adaf210d6f8a">DisparosPorJuego</a></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">get</span> { <span class="keywordflow">return</span> disparosPorJuego; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keyword">set</span> { disparosPorJuego = value; }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="};">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#a9642a3988f404e53685e2079c933102f">   58</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_administrador_juego.html#a9642a3988f404e53685e2079c933102f">VelocidadRotacion</a></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">get</span> { <span class="keywordflow">return</span> velocidadRotacion; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">set</span> { velocidadRotacion = value; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> Awake()</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_administrador_juego.html#ab528e16377dec05fb6949246b54fc2a7">SingletonAdministradorJuego</a> == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_variable" href="class_administrador_juego.html#ab528e16377dec05fb6949246b54fc2a7">SingletonAdministradorJuego</a> = <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            Debug.LogError(<span class="stringliteral">&quot;Ya existe una instancia de esta clase&quot;</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            Destroy(gameObject);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">if</span> (<a class="code hl_property" href="class_administrador_juego.html#abad493ed527f41062fa3adaf210d6f8a">DisparosPorJuego</a> &lt;= 0 &amp;&amp; !<a class="code hl_variable" href="class_administrador_juego.html#a4880fdf60678b41b0def7873ad595c1a">PanelPerder</a>.activeSelf &amp;&amp; !<a class="code hl_variable" href="class_administrador_juego.html#a0cbec405b888c2ad03163ae8aaee1763">PanelGanar</a>.activeSelf)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> (GameObject.FindGameObjectsWithTag(<span class="stringliteral">&quot;Bala&quot;</span>).Length == 0)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <a class="code hl_function" href="class_administrador_juego.html#a7963d2b839cb5a0ec1f70a9524e0f7e6">PerderJuego</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#aa15666b99c0dfd865cbb258d49003496">   91</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_administrador_juego.html#aa15666b99c0dfd865cbb258d49003496">GanarJuego</a>()</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_variable" href="class_administrador_juego.html#a0cbec405b888c2ad03163ae8aaee1763">PanelGanar</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        Time.timeScale = 0f;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#a7963d2b839cb5a0ec1f70a9524e0f7e6">  100</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_administrador_juego.html#a7963d2b839cb5a0ec1f70a9524e0f7e6">PerderJuego</a>()</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <a class="code hl_variable" href="class_administrador_juego.html#a4880fdf60678b41b0def7873ad595c1a">PanelPerder</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        Time.timeScale = 0f;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#af61de1bacf6864dda7307e1f8528700c">  109</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_administrador_juego.html#af61de1bacf6864dda7307e1f8528700c">SiguienteNivel</a>()</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        Time.timeScale = 1f; <span class="comment">// Reanuda el tiempo</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordtype">int</span> siguienteIndice = SceneManager.GetActiveScene().buildIndex + 1;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        SceneManager.LoadScene(siguienteIndice);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#a1ee829cca6aa51c7c45488623276b2a5">  119</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_administrador_juego.html#a1ee829cca6aa51c7c45488623276b2a5">RegresarAlMenu</a>()</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        Time.timeScale = 1f; <span class="comment">// Reanuda el tiempo</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        SceneManager.LoadScene(<span class="stringliteral">&quot;MenuPrincipal&quot;</span>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_administrador_juego.html#ae0e2065238bd6e9975df6d77ed5ef1e2">  128</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_administrador_juego.html#ae0e2065238bd6e9975df6d77ed5ef1e2">ReintentarNivel</a>()</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        Time.timeScale = 1f; <span class="comment">// Reanuda el tiempo</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+</div>
+<div class="ttc" id="aclass_administrador_juego_html"><div class="ttname"><a href="class_administrador_juego.html">AdministradorJuego</a></div><div class="ttdoc">Clase que administra el estado general del juego.</div><div class="ttdef"><b>Definition</b> <a href="#l00011">AdministradorJuego.cs:12</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_a05269e5fc65322ffa6b2c906264c773f"><div class="ttname"><a href="class_administrador_juego.html#a05269e5fc65322ffa6b2c906264c773f">AdministradorJuego.esUltimoNivel</a></div><div class="ttdeci">bool esUltimoNivel</div><div class="ttdoc">Indica si este es el último nivel del juego.</div><div class="ttdef"><b>Definition</b> <a href="#l00035">AdministradorJuego.cs:35</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_a0cbec405b888c2ad03163ae8aaee1763"><div class="ttname"><a href="class_administrador_juego.html#a0cbec405b888c2ad03163ae8aaee1763">AdministradorJuego.PanelGanar</a></div><div class="ttdeci">GameObject PanelGanar</div><div class="ttdoc">Panel que se muestra al ganar el nivel.</div><div class="ttdef"><b>Definition</b> <a href="#l00025">AdministradorJuego.cs:25</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_a1ee829cca6aa51c7c45488623276b2a5"><div class="ttname"><a href="class_administrador_juego.html#a1ee829cca6aa51c7c45488623276b2a5">AdministradorJuego.RegresarAlMenu</a></div><div class="ttdeci">void RegresarAlMenu()</div><div class="ttdoc">Funcion para cargar la escena del menú principal.</div><div class="ttdef"><b>Definition</b> <a href="#l00119">AdministradorJuego.cs:119</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_a4880fdf60678b41b0def7873ad595c1a"><div class="ttname"><a href="class_administrador_juego.html#a4880fdf60678b41b0def7873ad595c1a">AdministradorJuego.PanelPerder</a></div><div class="ttdeci">GameObject PanelPerder</div><div class="ttdoc">Panel que se muestra al perder el nivel.</div><div class="ttdef"><b>Definition</b> <a href="#l00030">AdministradorJuego.cs:30</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_a7963d2b839cb5a0ec1f70a9524e0f7e6"><div class="ttname"><a href="class_administrador_juego.html#a7963d2b839cb5a0ec1f70a9524e0f7e6">AdministradorJuego.PerderJuego</a></div><div class="ttdeci">void PerderJuego()</div><div class="ttdoc">Funcion que se encarga de mostrar el panel de derrota y detiene el tiempo del juego.</div><div class="ttdef"><b>Definition</b> <a href="#l00100">AdministradorJuego.cs:100</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_a9642a3988f404e53685e2079c933102f"><div class="ttname"><a href="class_administrador_juego.html#a9642a3988f404e53685e2079c933102f">AdministradorJuego.VelocidadRotacion</a></div><div class="ttdeci">float VelocidadRotacion</div><div class="ttdoc">Velocidad con la que se rota el cañón al apuntar.</div><div class="ttdef"><b>Definition</b> <a href="#l00058">AdministradorJuego.cs:59</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_aa15666b99c0dfd865cbb258d49003496"><div class="ttname"><a href="class_administrador_juego.html#aa15666b99c0dfd865cbb258d49003496">AdministradorJuego.GanarJuego</a></div><div class="ttdeci">void GanarJuego()</div><div class="ttdoc">Funcion que se encarga de mostrar el panel de victoria y detiene el tiempo del juego.</div><div class="ttdef"><b>Definition</b> <a href="#l00091">AdministradorJuego.cs:91</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_ab528e16377dec05fb6949246b54fc2a7"><div class="ttname"><a href="class_administrador_juego.html#ab528e16377dec05fb6949246b54fc2a7">AdministradorJuego.SingletonAdministradorJuego</a></div><div class="ttdeci">static AdministradorJuego SingletonAdministradorJuego</div><div class="ttdoc">Instancia única de la clase AdministradorJuego.</div><div class="ttdef"><b>Definition</b> <a href="#l00016">AdministradorJuego.cs:16</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_abad493ed527f41062fa3adaf210d6f8a"><div class="ttname"><a href="class_administrador_juego.html#abad493ed527f41062fa3adaf210d6f8a">AdministradorJuego.DisparosPorJuego</a></div><div class="ttdeci">int DisparosPorJuego</div><div class="ttdoc">Cantidad de disparos disponibles por nivel.</div><div class="ttdef"><b>Definition</b> <a href="#l00049">AdministradorJuego.cs:50</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_ad41548da404a0083923fb503288ccddc"><div class="ttname"><a href="class_administrador_juego.html#ad41548da404a0083923fb503288ccddc">AdministradorJuego.VelocidadBala</a></div><div class="ttdeci">int VelocidadBala</div><div class="ttdoc">Velocidad con la que se lanza la bala.</div><div class="ttdef"><b>Definition</b> <a href="#l00040">AdministradorJuego.cs:41</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_ae0e2065238bd6e9975df6d77ed5ef1e2"><div class="ttname"><a href="class_administrador_juego.html#ae0e2065238bd6e9975df6d77ed5ef1e2">AdministradorJuego.ReintentarNivel</a></div><div class="ttdeci">void ReintentarNivel()</div><div class="ttdoc">Funcion para reiniciar el nivel actual.</div><div class="ttdef"><b>Definition</b> <a href="#l00128">AdministradorJuego.cs:128</a></div></div>
+<div class="ttc" id="aclass_administrador_juego_html_af61de1bacf6864dda7307e1f8528700c"><div class="ttname"><a href="class_administrador_juego.html#af61de1bacf6864dda7307e1f8528700c">AdministradorJuego.SiguienteNivel</a></div><div class="ttdeci">void SiguienteNivel()</div><div class="ttdoc">Funcion para cargar la siguiente escena (nivel) en el orden del build index.</div><div class="ttdef"><b>Definition</b> <a href="#l00109">AdministradorJuego.cs:109</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_6b145c9f016454ce3ea2c3bfe7a543eb.html">Artillery</a></li><li class="navelem"><a href="dir_8cae759f94d4e9ec728a74348e8d2869.html">Assets</a></li><li class="navelem"><a href="dir_6fdb66d48c57a89c2d4616b8f3053c74.html">_scripts</a></li><li class="navelem"><b>AdministradorJuego.cs</b></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
