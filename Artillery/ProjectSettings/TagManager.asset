@@ -8,6 +8,8 @@ TagManager:
   - Suelo
   - Obstaculo
   - Enemigo
+  - Explosion
+  - Objetivo
   layers:
   - Default
   - TransparentFX
